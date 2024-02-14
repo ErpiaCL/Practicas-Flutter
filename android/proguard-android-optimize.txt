@@ -1,0 +1,15 @@
+-keep public class com.example.MyClass {
+    public *;
+}
+
+-keepnames class com.example.MyClass {
+    public *;
+}
+
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keepattributes Signature,LineNumberTable,*Annotation*,EnclosingMethod
+
+-adaptresourcefilecontents **.xml,**.json
+
+-dontwarn com.example.library.**
